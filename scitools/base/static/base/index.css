@@ -1,0 +1,151 @@
+/* Header */
+.header {
+    background-color: rgb(46, 45, 45);
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: row;
+    color: beige;
+}
+#logo {
+    padding-left: 8%;
+    color: beige;
+    padding-right: 30%;
+    background-color: rgb(46, 45, 45);
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.nav {
+
+    color:beige;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: rgb(46, 45, 45);
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.socials {
+    padding-left: 10%;
+    color: beige;
+    padding-right: 1%;
+    background-color: rgb(46, 45, 45);
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+@media (max-width:600px) {
+    .header {
+        display: block;
+        width: 100%;
+        background:rgb(46, 45, 45);
+        background-color: rgb(46, 45, 45);
+    }
+    #logo {
+        display: block;
+        background-color: rgb(46, 45, 45);
+        padding-left: 45%;
+        padding-bottom: 0;
+    }
+    .nav {
+        display: block;
+        background-color: rgb(46, 45, 45);
+        padding-bottom: 0;
+        padding-left: 5%;
+    }
+    .socials {
+        display: block;
+        background-color: rgb(46, 45, 45);
+        padding-left: 5%;
+    }
+}
+
+/* Middle */
+#mid {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+}
+.side-bar  {
+    text-align: left;
+    font-size: 1.3em;
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-right: 0.5%;
+    border-right: 100px;
+    max-width: 153.16px;
+    align-items: center;
+}
+.side-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:600px) {
+    .side-bar {
+        width: 0;
+        padding: 0;
+        max-width: 0;
+        border: 0;
+        font-size: 0;
+    }
+    .side-list {
+        width: 0;
+        margin :0;
+    }
+}
+.main {
+    padding-left: 5%;
+    width: 80%;
+    font-size: 15px;
+}
+.main-small {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.content-small {
+    font-size: 1.6rem;
+}
+
+@media (max-width:600px) {
+    .main {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    .main-small {
+        width: 80%;
+        height: auto;
+        padding-left: 5%;
+    }
+    img {
+        width:80%;
+    }
+}
+
+/* Footer */
+.foot {
+    background-color: rgb(46, 45, 45);
+    /* display: flex;
+    flex-direction: row; */
+    width: 100%;
+    font-size: 1.7rem;
+}
+.foot-link {
+    display: block;
+    font-size: 1.5rem;
+}
+/* General */
+html {
+    font-size: 10px;
+}
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+a {
+    text-decoration-line: none;
+    color: beige;
+}

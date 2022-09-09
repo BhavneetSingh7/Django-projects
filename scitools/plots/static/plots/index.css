@@ -1,0 +1,44 @@
+.side {
+    display: inline-block;
+}
+.container {
+    display: inline-block;
+}
+.form {
+    display: inline-block;
+    vertical-align: top;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center;
+    align-items: center; */
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+.plot {
+    display: inline-block;
+    /* display: flex;
+    flex-direction: row; */
+    /* justify-content: center;
+    align-items: center; */
+}
+.vals {
+    display: block;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.enter {
+    width: 90px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+body {
+    background-color: rgb(67, 67, 67);
+    color: white;
+}
+p {
+    display: inline;
+}
+a {
+    text-decoration: none;
+}
