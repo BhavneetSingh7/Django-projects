@@ -1,1 +1,1 @@
-All the projects I made from Youtube tutorials
+All the projects I made by watching Youtube tutorials.
