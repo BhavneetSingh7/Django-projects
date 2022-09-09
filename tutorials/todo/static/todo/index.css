@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 1px 10px 0 rgb(241, 234, 234); */
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(241, 234, 234);
+}
+#id_title {
+    margin-left: 5%;
+    padding-right: 25%;
+}
+.submit {
+    margin-left: 5%;
+}
+.list {
+    margin-left: 5%;
+}
+.task {
+    margin: 0px;
+    font-size: 16px;
+}
+.icon {
+    width: 14px;
+    align-items: center;
+}
+body {
+    background-color: rgb(44, 44, 44);
+    color: rgb(241, 234, 234);
+}
+a {
+    text-decoration: none;
+    color: rgb(241, 234, 234);
+}
+p {
+    display: inline-block;
+}
+h2 {
+    color: rgb(241, 234, 234);
+    text-align: center;
+}

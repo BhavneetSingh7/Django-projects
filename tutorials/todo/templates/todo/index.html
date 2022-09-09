@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'todo/index.css' %}">
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Todo List</h2>
+        <form action="/todo/" method="POST">
+            {% csrf_token %}
+            {{form.title}}
+            <input type="submit" value="Add Task" class="submit">
+        </form>
+        {% for task in tasks %}
+            <div class="list">
+                <a href="{% url 'Update' task.id %}" title="Update task">
+                    {% if task.complete == True %}
+                    <p class="task"><strike>{{task}}</strike></p>
+                    {% else %}
+                    <p class="task">{{task}}</p>
+                    {% endif %}
+                </a>
+                <a href="{% url 'Delete' task.id %}">
+                    <img src="{% static 'todo/del.png' %}" class="icon" alt="del">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
