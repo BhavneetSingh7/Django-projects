@@ -40,7 +40,8 @@ def index(request):
     return render(request,'newsletter/index.html',context)
 
 def check(request):
-    return HttpResponse('We have sent you a verification email!.\nPlease click on the link in that email to verify yourself.')
+    # return HttpResponse('We have sent you a verification email!.\nPlease click on the link in that email to verify yourself.')
+    return render(request,'newsletter/check.html')
 
 def verification(request,subscriber,verify_key):
     try:
@@ -49,7 +50,9 @@ def verification(request,subscriber,verify_key):
         sub.save()
     except ObjectDoesNotExist:
         return HttpResponse('Verification Failed')
-    return HttpResponse('Verification successful')
+    return render(request,'newsletter/verification.html')
 
-def unsubscribe(request,subscriber):
-    return HttpResponse('Successfully unsubcribed')
+def unsubscribe(request,subscriber,verify_key):
+    sub = Creds.objects.get(email_id=subscriber,verify_key=verify_key)
+    sub.delete()
+    return render(request,'newsletter/unsubscribe.html',context={'email_id':subscriber})
